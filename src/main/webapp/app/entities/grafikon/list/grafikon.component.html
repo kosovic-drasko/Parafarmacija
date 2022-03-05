@@ -1,0 +1,195 @@
+<!--<div>-->
+<!--  <h2 id="page-heading" data-cy="GrafikonHeading">-->
+<!--    <span>Grafikons</span>-->
+
+<!--    <div class="d-flex justify-content-end">-->
+<!--      <button class="btn btn-info mr-2" (click)="loadAll()" [disabled]="isLoading">-->
+<!--        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>-->
+<!--        <span>Refresh List</span>-->
+<!--      </button>-->
+
+<!--      <button-->
+<!--        id="jh-create-entity"-->
+<!--        data-cy="entityCreateButton"-->
+<!--        class="btn btn-primary jh-create-entity create-grafikon"-->
+<!--        [routerLink]="['/grafikon/new']"-->
+<!--      >-->
+<!--        <fa-icon icon="plus"></fa-icon>-->
+<!--        <span> Create a new Grafikon </span>-->
+<!--      </button>-->
+<!--    </div>-->
+<!--  </h2>-->
+
+<!--  <jhi-alert-error></jhi-alert-error>-->
+
+<!--  <jhi-alert></jhi-alert>-->
+
+<!--  <div class="alert alert-warning" id="no-result" *ngIf="grafikons?.length === 0">-->
+<!--    <span>No grafikons found</span>-->
+<!--  </div>-->
+
+<!--  <div class="table-responsive" id="entities" *ngIf="grafikons && grafikons.length > 0">-->
+<!--    <table class="table table-striped" aria-describedby="page-heading">-->
+<!--      <thead>-->
+<!--        <tr>-->
+<!--          <th scope="col"><span>ID</span></th>-->
+<!--          <th scope="col"><span>Region</span></th>-->
+<!--          <th scope="col"><span>Promet</span></th>-->
+<!--          <th scope="col"></th>-->
+<!--        </tr>-->
+<!--      </thead>-->
+<!--      <tbody>-->
+<!--        <tr *ngFor="let grafikon of grafikons; trackBy: trackId" data-cy="entityTable">-->
+<!--          <td>-->
+<!--            <a [routerLink]="['/grafikon', grafikon.id, 'view']">{{ grafikon.id }}</a>-->
+<!--          </td>-->
+<!--          <td>{{ grafikon.region }}</td>-->
+<!--          <td>{{ grafikon.promet }}</td>-->
+<!--          <td class="text-right">-->
+<!--            <div class="btn-group">-->
+<!--              <button-->
+<!--                type="submit"-->
+<!--                [routerLink]="['/grafikon', grafikon.id, 'view']"-->
+<!--                class="btn btn-info btn-sm"-->
+<!--                data-cy="entityDetailsButton"-->
+<!--              >-->
+<!--                <fa-icon icon="eye"></fa-icon>-->
+<!--                <span class="d-none d-md-inline">View</span>-->
+<!--              </button>-->
+
+<!--              <button-->
+<!--                type="submit"-->
+<!--                [routerLink]="['/grafikon', grafikon.id, 'edit']"-->
+<!--                class="btn btn-primary btn-sm"-->
+<!--                data-cy="entityEditButton"-->
+<!--              >-->
+<!--                <fa-icon icon="pencil-alt"></fa-icon>-->
+<!--                <span class="d-none d-md-inline">Edit</span>-->
+<!--              </button>-->
+
+<!--              <button type="submit" (click)="delete(grafikon)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">-->
+<!--                <fa-icon icon="times"></fa-icon>-->
+<!--                <span class="d-none d-md-inline">Delete</span>-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </td>-->
+<!--        </tr>-->
+<!--      </tbody>-->
+<!--    </table>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<div>-->
+<!--  <h2 id="page-heading" data-cy="GrfikonHeading">-->
+<!--    <span>Grfikons</span>-->
+
+<!--    <div class="d-flex justify-content-end">-->
+<!--      <button class="btn btn-info mr-2" (click)="loadAll()" [disabled]="isLoading">-->
+<!--        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>-->
+<!--        <span>Refresh List</span>-->
+<!--      </button>-->
+
+<!--      <button-->
+<!--        id="jh-create-entity"-->
+<!--        data-cy="entityCreateButton"-->
+<!--        class="btn btn-primary jh-create-entity create-grfikon"-->
+<!--        [routerLink]="['/grfikon/new']"-->
+<!--      >-->
+<!--        <fa-icon icon="plus"></fa-icon>-->
+<!--        <span> Create a new Grfikon </span>-->
+<!--      </button>-->
+<!--    </div>-->
+<!--  </h2>-->
+
+<!--  <jhi-alert-error></jhi-alert-error>-->
+
+<!--  <jhi-alert></jhi-alert>-->
+
+<!--  <div class="alert alert-warning" id="no-result" *ngIf="grfikons?.length === 0">-->
+<!--    <span>No grfikons found</span>-->
+<!--  </div>-->
+
+<!--  <div class="table-responsive" id="entities" *ngIf="grfikons && grfikons.length > 0">-->
+<!--    <table class="table table-striped" aria-describedby="page-heading">-->
+<!--      <thead>-->
+<!--        <tr>-->
+<!--          <th scope="col"><span>ID</span></th>-->
+<!--          <th scope="col"><span>Region</span></th>-->
+<!--          <th scope="col"><span>Promet</span></th>-->
+<!--          <th scope="col"></th>-->
+<!--        </tr>-->
+<!--      </thead>-->
+<!--      <tbody>-->
+<!--        <tr *ngFor="let grfikon of grfikons; trackBy: trackId" data-cy="entityTable">-->
+<!--          <td>-->
+<!--            <a [routerLink]="['/grfikon', grfikon.id, 'view']">{{ grfikon.id }}</a>-->
+<!--          </td>-->
+<!--          <td>{{ grfikon.region }}</td>-->
+<!--          <td>{{ grfikon.promet }}</td>-->
+<!--          <td class="text-right">-->
+<!--            <div class="btn-group">-->
+<!--              <button-->
+<!--                type="submit"-->
+<!--                [routerLink]="['/grfikon', grfikon.id, 'view']"-->
+<!--                class="btn btn-info btn-sm"-->
+<!--                data-cy="entityDetailsButton"-->
+<!--              >-->
+<!--                <fa-icon icon="eye"></fa-icon>-->
+<!--                <span class="d-none d-md-inline">View</span>-->
+<!--              </button>-->
+
+<!--              <button-->
+<!--                type="submit"-->
+<!--                [routerLink]="['/grfikon', grfikon.id, 'edit']"-->
+<!--                class="btn btn-primary btn-sm"-->
+<!--                data-cy="entityEditButton"-->
+<!--              >-->
+<!--                <fa-icon icon="pencil-alt"></fa-icon>-->
+<!--                <span class="d-none d-md-inline">Edit</span>-->
+<!--              </button>-->
+
+<!--              <button type="submit" (click)="delete(grfikon)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">-->
+<!--                <fa-icon icon="times"></fa-icon>-->
+<!--                <span class="d-none d-md-inline">Delete</span>-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </td>-->
+<!--        </tr>-->
+<!--      </tbody>-->
+<!--    </table>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="example">
+  <button (click)="print()">Stampaj</button>
+</div>
+
+<div class="chartCard">
+  <div class="chartBox">
+    <div *ngIf="chart">
+      <canvas id="canvas">{{ chart }}</canvas>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="lib.js"></script>
+<script>
+  function printDiv(printableArea) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = printContents;
+
+    window.print();
+
+    document.body.innerHTML = originalContents;
+  }
+</script>
+<script>
+  window.onload = function () {
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+    context.fillStyle = 'green';
+    context.fillRect(50, 50, 100, 100);
+    // no argument defaults to image/png; image/jpeg, etc also work on some
+    // implementations -- image/png is the only one that must be supported per spec.
+    window.location = canvas.toDataURL('image/png');
+  };
+</script>

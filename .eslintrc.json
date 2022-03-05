@@ -72,7 +72,7 @@
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-parameter-properties": ["warn", { "allows": ["public", "private", "protected"] }],
-    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-shadow": ["warn"],
     "@typescript-eslint/no-unnecessary-condition": "error",
     "@typescript-eslint/no-unsafe-argument": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",

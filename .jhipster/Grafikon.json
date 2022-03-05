@@ -1,0 +1,18 @@
+{
+  "changelogDate": "20220305205807",
+  "fields": [
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "promet",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Grafikon",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
