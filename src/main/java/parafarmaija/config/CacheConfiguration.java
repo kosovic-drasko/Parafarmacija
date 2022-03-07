@@ -49,6 +49,7 @@ public class CacheConfiguration {
             createCache(cm, parafarmaija.domain.Authority.class.getName());
             createCache(cm, parafarmaija.domain.User.class.getName() + ".authorities");
             createCache(cm, parafarmaija.domain.Grafikon.class.getName());
+            createCache(cm, parafarmaija.domain.Tabela.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

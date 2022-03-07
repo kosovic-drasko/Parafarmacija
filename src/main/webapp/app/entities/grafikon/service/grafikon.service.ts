@@ -13,7 +13,7 @@ export type EntityArrayResponseType = HttpResponse<IGrafikon[]>;
 
 @Injectable({ providedIn: 'root' })
 export class GrafikonService {
-  protected resourceUrl = this.applicationConfigService.getEndpointFor('api/grafikons');
+  protected resourceUrl = this.applicationConfigService.getEndpointFor('api/tabelas');
 
   constructor(protected http: HttpClient, protected applicationConfigService: ApplicationConfigService) {}
 

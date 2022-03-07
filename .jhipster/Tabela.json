@@ -1,0 +1,18 @@
+{
+  "changelogDate": "20220307182139",
+  "fields": [
+    {
+      "fieldName": "region",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "promet",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Tabela",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
